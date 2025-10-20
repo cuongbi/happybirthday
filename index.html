@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>🎁</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffe6e6, #ffb3c6);
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    .gift-box {
+      width: 120px;
+      height: 120px;
+      background: #ff4d6d;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 30px;
+    }
+
+    .gift-lid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 40px;
+      background: #ff758f;
+      border-radius: 10px 10px 0 0;
+      transition: transform 0.5s ease;
+    }
+
+    .heart {
+      font-size: 50px;
+      position: absolute;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.6s ease;
+    }
+
+    .show-heart {
+      opacity: 1;
+      transform: scale(1.5);
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0) scale(1.5); }
+      to { transform: translateY(-20px) scale(1.6); }
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #b3003b;
+    }
+  </style>
+</head>
+<body>
+  <h2>Nhấn vào hộp quà để mở 💌</h2>
+  <div class="gift-box">
+    <div class="gift-lid"></div>
+    🎁
+    <div class="heart">❤️</div>
+  </div>
+  <dev><h2>Chúc cậu một ngày sinh nhật thật vui và ý nghĩa</h2> </dev>
+   <dev><h2>Tuổi mới luôn xinh đẹp, vui vẻ , hạnh phúc và tìm được nửa ấy nhé 🌹 ❤️</h2></dev> 
+   <dev><h2>Tặng cậu trái tim này nhé❤️</h2> </dev>
+  
+
+
+  <script src="haha.js"></script>
+</body>
+</html>
+
+
